@@ -6,7 +6,7 @@ A Python-based system for analyzing behavioral data from Virmen experiments. Thi
 
 - **Data Loading**: Load and process behavioral data from MATLAB (.mat) files
 - **Data Analysis**: Calculate performance metrics, psychometric curves, and learning curves
-- **Visualization**: Generate publication-ready plots for behavioral data
+- **Visualization**: Generate plots for behavioral data
 - **Statistical Modeling**: Implement GLM models for behavioral analysis
 - **Multi-session Analysis**: Process data across multiple experimental sessions
 - **Optogenetic Analysis**: Specialized analysis for optogenetic experiments
