@@ -660,7 +660,7 @@ class plot_behavioral_data:
         plt.tight_layout()
         plt.show()
     
-    def plot_behavior_single_session(self, mouse_ids, date):
+    def plot_behavior_single_session(self, mouse_ids, date, base_directory):
         """
         Creates performance plots for multiple mice in a single session.
 
@@ -697,7 +697,7 @@ class plot_behavioral_data:
         for idx, mouse_id in enumerate(mouse_ids):
             try:
                 # Construct the directory path and get data
-                directory = '/Volumes/Runyan5/Akhil/behavior/{}/'.format(mouse_id)
+                directory = base_directory + '{}/'.format(mouse_id)
                 
                 # Get session data
                 df_single_session, conditions, percentage_correct = load_data.get_behavioral_data_for_session(
